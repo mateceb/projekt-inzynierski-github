@@ -55,9 +55,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Calculations.cs" />
+    <Compile Include="Datavalidation_service.cs" />
     <Compile Include="SoundTest.xaml.cs">
       <DependentUpon>SoundTest.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TestResults.cs" />
     <Compile Include="VisualTest.xaml.cs">
       <DependentUpon>VisualTest.xaml</DependentUpon>
     </Compile>
