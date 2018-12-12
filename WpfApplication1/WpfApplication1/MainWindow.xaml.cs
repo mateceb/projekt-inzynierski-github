@@ -24,5 +24,18 @@ namespace WpfApplication1
         {
             InitializeComponent();
         }
+        private void Visualtest_btn_Click(object sender, RoutedEventArgs e)
+        {
+            VisualTest vtest = new VisualTest();
+            vtest.Show();
+            this.Close();
+        }
+
+        private void Soundtest_btn_Click(object sender, RoutedEventArgs e)
+        {
+            SoundTest stest = new SoundTest();
+            stest.Show();
+            this.Close();
+        }
     }
 }

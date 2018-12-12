@@ -55,6 +55,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="SoundTest.xaml.cs">
+      <DependentUpon>SoundTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VisualTest.xaml.cs">
+      <DependentUpon>VisualTest.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,6 +73,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="SoundTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VisualTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -94,6 +108,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\main background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Sound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\back.png" />
+    <Resource Include="images\clear.png" />
+    <Resource Include="images\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Save.png" />
+    <Resource Include="images\Start.png" />
+    <Resource Include="images\Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Visual.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

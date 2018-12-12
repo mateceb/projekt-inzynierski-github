@@ -5,8 +5,60 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+       Title="MainWindow" Height="317.874" Width="533.454" MinWidth="600" MinHeight="300">
+    <Border>
+        <Border.Background>
+            <ImageBrush ImageSource="images/main background.jpg"/>
+        </Border.Background>
+        <Grid Margin="0,0,2,7" MinWidth="300" MinHeight="500">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="331*"/>
+                <ColumnDefinition Width="192*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="Visualtest_btn" Content="" Margin="58,91,124,259" Click="Visualtest_btn_Click" MinWidth="190" MinHeight="150" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button.Background>
+                    <ImageBrush ImageSource="images/Visual.png"/>
+                </Button.Background>
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <Button x:Name="Soundtest_btn" Content="" Margin="325,91,65,259" Click="Soundtest_btn_Click" Grid.ColumnSpan="2" MinWidth="200" MinHeight="170" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button.Background>
+                    <ImageBrush ImageSource="images/Sound.png"/>
+                </Button.Background>
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+        </Grid>
+    </Border>
 </Window>
